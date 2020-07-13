@@ -81,6 +81,9 @@ table {
 	margin:0;
 	padding: 0;
 }
+a {
+    color: #ed2a26 ;
+}
 a:focus {
 	text-decoration: none;
 	outline: none;
@@ -395,6 +398,10 @@ header {
     float: left;
     width: 135px;
     margin-left: 20px;
+}
+
+.main_logo img{
+    width: 135px;
 }
 
 .logo-inverse {
@@ -4608,6 +4615,10 @@ a.rmv-btn i {
     margin: auto !important;
 }
 
+.main_logo15 img {
+    width: 135px;
+}
+
 .hde152 {
 	display: none;
 }
@@ -5735,12 +5746,17 @@ a.rmv-btn i {
 
 /* --- Signup Signin Page --- */
 
+
 .main_logo25 {
     float: none;
-    width: 135px;
+    width: 100%;
     text-align: center;
     margin: auto !important;
 	padding: 50px 0;
+}
+
+.main_logo25 img {
+    width: 300px;
 }
 
 .sign_in_up_bg {
@@ -7874,3 +7890,5 @@ a.rmv-btn i {
     right: 13px;
     position: absolute;
 }
+
+

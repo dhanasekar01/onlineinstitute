@@ -1,0 +1,30 @@
+{
+	"name": "purushoth",
+	"description": "Connecting the helping people and help in need people",
+	"version": "0.0.1",
+	"author": "",
+	"dependencies": {
+		"body-parser": "^1.18.3",
+		"compression": "^1.7.4",
+		"cookie-parser": "^1.4.5",
+		"express": "^4.16.4",
+		"express-flash": "0.0.2",
+		"express-session": "^1.17.1",
+		"express-validator": "^6.5.0",
+		"method-override": "^3.0.0",
+		"morgan": "^1.10.0",
+		"mysql": "^2.18.1",
+		"node-gcm": "^1.0.2"
+	},
+	"scripts": {
+		"start": "node server.js"
+	},
+	"devDependencies": {
+		"autoprefixer": "^9.4.3",
+		"postcss-cli": "^6.1.0"
+	},
+	"engines": {
+		"node": ">=8.11.2"
+	},
+	"license": "MIT"
+}
