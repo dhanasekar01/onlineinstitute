@@ -41,8 +41,8 @@
 			<span class="collapse_menu--label"></span>
 		</button>
 		<div class="main_logo" id="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""></a>
-			<a href="index.html"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
+			<a onclick="app.navigation.home();"><img src="images/logo.png" alt=""></a>
+			<a onclick="app.navigation.home();"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
 		</div>
 		<div class="search120">
 			<div class="ui search">
@@ -55,10 +55,10 @@
 		<div class="header_right">
 			<ul>
 				<li>
-					<a href="create_new_course.html" class="upload_btn">Create New Course</a>
+					<a onclick="app.navigation.createcourse();" class="upload_btn">Create New Course</a>
 				</li>
 				<li>
-					<a href="index.html" class="option_links"><i class='uil uil-home-alt'></i><span class="noti_count">9+</span></a>
+					<a onclick="app.navigation.home();" class="option_links"><i class='uil uil-home-alt'></i><span class="noti_count">9+</span></a>
 				</li>
 				<li class="ui dropdown">
 					<a href="#" class="option_links"><i class='uil uil-envelope-alt'></i><span class="noti_count">3</span></a>
@@ -103,7 +103,7 @@
 							<div class="profile_link">
 								<img src="images/left-imgs/img-1.jpg" alt="">
 								<div class="pd_content">
-									<h6>Rock William</h6>
+									<h6>Purushothaman</h6>
 									<p>Like Your Comment On Video <strong>How to create sidebar menu</strong>.</p>
 									<span class="nm_time">2 min ago</span>
 								</div>							
@@ -149,7 +149,7 @@
 									<span>gambol943@gmail.com</span>
 								</div>							
 							</div>
-							<a href="my_instructor_profile_view.html" class="dp_link_12">View Instructor Profile</a>						
+							<a onclick="app.navigation.instructor();" class="dp_link_12">View Instructor Profile</a>						
 						</div>
 						<div class="night_mode_switch__btn">
 							<a href="#" id="night-mode" class="btn-night-mode">
@@ -159,11 +159,11 @@
 								</span>
 							</a>
 						</div>
-						<a href="instructor_dashboard.html" class="item channel_item">Cursus Dashboard</a>						
+						<a onclick="app.navigation.teacherDashboard();" class="item channel_item">Cursus Dashboard</a>						
 						<a href="membership.html" class="item channel_item">Paid Memberships</a>
-						<a href="setting.html" class="item channel_item">Setting</a>
-						<a href="help.html" class="item channel_item">Help</a>
-						<a href="feedback.html" class="item channel_item">Send Feedback</a>
+						<a onclick="app.navigation.settings()" class="item channel_item">Setting</a>
+						<a onclick="app.navigation.help()" class="item channel_item">Help</a>
+						<a onclick="app.navigation.feedback();" class="item channel_item">Send Feedback</a>
 						<a href="sign_in.html" class="item channel_item">Sign Out</a>
 					</div>
 				</li>
@@ -177,7 +177,7 @@
 			<div class="left_section">
 				<ul>
 					<li class="menu--item">
-						<a href="instructor_dashboard.html" class="menu--link" title="Dashboard">
+						<a onclick="app.navigation.teacherDashboard();" class="menu--link" title="Dashboard">
 							<i class="uil uil-apps menu--icon"></i>
 							<span class="menu--label">Dashboard</span>
 						</a>
@@ -195,7 +195,7 @@
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="create_new_course.html" class="menu--link" title="Create Course">
+						<a onclick="app.navigation.createcourse();" class="menu--link" title="Create Course">
 							<i class='uil uil-plus-circle menu--icon'></i>
 							<span class="menu--label">Create Course</span>
 						</a>
@@ -253,13 +253,13 @@
 			<div class="left_section pt-2">
 				<ul>
 					<li class="menu--item">
-						<a href="setting.html" class="menu--link" title="Setting">
+						<a onclick="app.navigation.settings()" class="menu--link" title="Setting">
 							<i class='uil uil-cog menu--icon'></i>
 							<span class="menu--label">Setting</span>
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="feedback.html" class="menu--link" title="Send Feedback">
+						<a onclick="app.navigation.feedback();" class="menu--link" title="Send Feedback">
 							<i class='uil uil-comment-alt-exclamation menu--icon'></i>
 							<span class="menu--label">Send Feedback</span>
 						</a>
@@ -428,7 +428,7 @@
 												<tr>
 													<td class="text-center">002</td>
 													<td class="cell-ta">Course Title Here</td>
-													<td class="cell-ta"><a href="#">Rock William</a></td>
+													<td class="cell-ta"><a href="#">Purushothaman</a></td>
 													<td class="cell-ta"><a href="#">C++</a></td>
 													<td class="text-center"><b class="course_active">Download</b></td>
 													<td class="text-center">$20</td>
@@ -617,9 +617,9 @@
 				<div class="row">					
 					<div class="col-lg-12">
 						<div class="item_f1">
-							<a href="terms_of_use.html">Copyright Policy</a>
-							<a href="terms_of_use.html">Terms</a>
-							<a href="terms_of_use.html">Privacy Policy</a>
+							<a onclick="app.navigation.terms();">Copyright Policy</a>
+							<a onclick="app.navigation.terms();">Terms</a>
+							<a onclick="app.navigation.terms();">Privacy Policy</a>
 						</div>
 					</div>
 					<div class="col-lg-12">
@@ -628,7 +628,7 @@
 								<div class="col-md-6">
 									<ul class="fotb_left">
 										<li>
-											<a href="index.html">
+											<a onclick="app.navigation.home();">
 												<div class="footer_logo">
 													<img src="images/logo1.svg" alt="">
 												</div>

@@ -28,9 +28,56 @@
         login: function(){
             app.navigation.openCategory("login");
         },
+        help: function(){
+            app.navigation.openCategory("help");
+        },
+        comingsoon: function(){
+            app.navigation.openCategory("comingsoon");
+        },
         student: function(){
             app.navigation.openCategory("student");
         },
+        contact: function(){
+            app.navigation.openCategory("contact");
+        },
+        home: function(){
+            app.utils.loading();            
+            app.mobileApp.navigate("lms/");
+            app.utils.loading(false);
+        },
+        feedback: function(){
+            app.navigation.openCategory("feedback");
+        },
+        settings:function(){
+            app.navigation.openCategory("settings");
+        },
+        explore:function(){
+            app.navigation.openCategory("explore");
+        },
+        livestream: function(){
+            app.navigation.openCategory("livestream");
+        },
+        liveoutput:function(){
+            app.navigation.openCategory("liveoutput");
+        },
+        categories:()=>{
+            app.navigation.openCategory("categories");
+        },
+        createcourse:()=> {
+            app.navigation.openCategory("createcourse");
+        },
+        savedcourse:()=>{
+            app.navigation.openCategory("savedcourse");
+        },
+        allinstructor:()=>{
+            app.navigation.openCategory("allinstructor");
+        },
+        teacherDashboard:()=>{
+            app.navigation.openCategory("instructor_dashboard");
+        },
+        instructor:()=>{
+            app.navigation.openCategory("instructor");
+        }
     }
 
 }());

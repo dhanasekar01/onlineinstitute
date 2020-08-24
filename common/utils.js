@@ -1,35 +1,35 @@
 (function () {
     app.utils = app.utils || {};
 
-    app.utils={
-        mycart :{
+    app.utils = {
+        mycart: {
             cartCount: 0,
             totalPrice: 0.0,
             cart: [],
-            isCartAvailable:false
+            isCartAvailable: false
         },
-        queryParam : (params) => {
-            return params ? "?"+ $.param(params) : "";
+        queryParam: (params) => {
+            return params ? "?" + $.param(params) : "";
         },
         changeLocalization: (lang) => {
-            localStorage.setItem("culture",lang);
-            app.localization.set('currentCulture',lang);
+            localStorage.setItem("culture", lang);
+            app.localization.set('currentCulture', lang);
         },
-        en : () => {
-           app.utils.changeLocalization("en")
+        en: () => {
+            app.utils.changeLocalization("en")
         },
-        ta :() => {
+        ta: () => {
             app.utils.changeLocalization("ta")
         },
-        getCart:()=> {
-            $(".checkoutbtn").attr("disabled","disabled");
+        getCart: () => {
+            $(".checkoutbtn").attr("disabled", "disabled");
             app.utils.setloggedInUser();
 
             var cartItem = localStorage.getItem("cartItem");
             var totalPrice = localStorage.getItem("totalPrice");
 
-            if(cartItem){
-                var cart= JSON.parse(cartItem)
+            if (cartItem) {
+                var cart = JSON.parse(cartItem)
                 let resp = {
                     cartCount: cart.length,
                     totalPrice: totalPrice,
@@ -37,8 +37,8 @@
                     isCartAvailable: cart.length > 0
                 }
                 app.utils.loadCart(resp);
-                return  resp;
-            }else{
+                return resp;
+            } else {
                 $(".shopping-cart-items").empty();
                 $(".totalPrice").empty();
                 $(".cartCount").empty();
@@ -47,33 +47,83 @@
         }
     }
 
-    app.utils.loadCart = function(resp){
-        var template = kendo.template($("#cartTemplate").html());
-        $(".shopping-cart-items").html(template(resp.cart));
-        $(".totalPrice").html(resp.totalPrice);
-        $(".cartCount").html(resp.cartCount);
+    app.utils.loadMenu = () => {
+        var tid = setInterval(function () {
+            if (document.readyState !== 'complete') return;
+            clearInterval(tid);
 
-        if(Number(resp.cartCount) > 0){
-            $(".checkoutbtn").removeAttr("disabled");
-        }else{
-            $(".checkoutbtn").attr("disabled","disabled");
-        }
+
+            var querySelector = document.querySelector.bind(document);
+
+            var nav = document.querySelector('.vertical_nav');
+            var wrapper = document.querySelector('.wrapper');
+
+            var menu = document.getElementById("js-menu");
+            var subnavs = menu.querySelectorAll('.menu--item__has_sub_menu');
+
+            // Toggle menu click
+            querySelector('.toggle_menu').onclick = function () {
+
+                nav.classList.toggle('vertical_nav__opened');
+
+                wrapper.classList.toggle('toggle-content');
+
+            };
+
+
+            // Minify menu on menu_minifier click
+            querySelector('.collapse_menu').onclick = function () {
+
+                nav.classList.toggle('vertical_nav__minify');
+
+                wrapper.classList.toggle('wrapper__minify');
+
+                for (var j = 0; j < subnavs.length; j++) {
+                    subnavs[j].classList.remove('menu--subitens__opened');
+                }
+
+            };
+
+
+            // Open Sub Menu
+
+            for (var i = 0; i < subnavs.length; i++) {
+
+                if (subnavs[i].classList.contains('menu--item__has_sub_menu')) {
+
+                    subnavs[i].querySelector('.menu--link').addEventListener('click', function (e) {
+
+                        for (var j = 0; j < subnavs.length; j++) {
+
+                            if (e.target.offsetParent != subnavs[j])
+                                subnavs[j].classList.remove('menu--subitens__opened');
+
+                        }
+
+                        e.target.offsetParent.classList.toggle('menu--subitens__opened');
+
+                    }, false);
+
+                }
+            }
+
+        }, 100);
     }
 
-   app.utils.getPDF = function(selector) {
+    app.utils.getPDF = function (selector) {
         kendo.drawing.drawDOM($(selector)).then(function (group) {
             kendo.drawing.pdf.saveAs(group, "Invoice.pdf");
         });
     }
 
-    app.utils.getFormattedDate = function(input) {
+    app.utils.getFormattedDate = function (input) {
         console.log(input)
         var pattern = /(.*?)-(.*?)-(.*?)$/;
-        var result = input.replace(pattern,function(match,yyyy,mm,dd){
+        var result = input.replace(pattern, function (match, yyyy, mm, dd) {
 
-            var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+            var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-            return (dd<10?"0"+dd:dd) + " " + months[(mm-1)] + " " + yyyy;
+            return (dd < 10 ? "0" + dd : dd) + " " + months[(mm - 1)] + " " + yyyy;
         });
 
         return result;
@@ -110,9 +160,9 @@
         return app.utils.generateCaptchaId("captcha")
     }
 
-    app.utils.validateCaptcha = function(code){
+    app.utils.validateCaptcha = function (code) {
         event.preventDefault();
-        return document.getElementById("cpatchaTextBox").value === code ;
+        return document.getElementById("cpatchaTextBox").value === code;
     }
 
     app.utils.loading = function (load) {
@@ -123,9 +173,6 @@
         return kendo.mobile.application.hideLoading();
     };
 
-    app.utils.openCart= function () {
-        $(".shopping-cart").fadeToggle("fast");
-    }
 
     app.utils.encode = function (str) {
         return $.base64.btoa(str);
@@ -151,28 +198,28 @@
 
     };
 
-    app.utils.setloggedInUser = function(){
+    app.utils.setloggedInUser = function () {
 
         $(".loginLink").removeClass("hide");
         $(".loginLink").html("Login");
         $(".loggedLink").addClass("hide");
         localStorage.removeItem("loginaction");
 
-        if($.cookie("sid") != null){
-            app.getUser(function(data){
-                if(data && data.message == "customerfound"){
-                    
-                    $.cookie('_cust',true);
+        if ($.cookie("sid") != null) {
+            app.getUser(function (data) {
+                if (data && data.message == "customerfound") {
+
+                    $.cookie('_cust', true);
                 }
-                
-                if($.cookie("ssup") || $.cookie("_cust")){
+
+                if ($.cookie("ssup") || $.cookie("_cust")) {
                     $(".loginLink").addClass("hide");
                     $(".loggedLink").removeClass("hide");
-                    localStorage.setItem("loginaction","complete");
+                    localStorage.setItem("loginaction", "complete");
                     return true;
-                }else{
+                } else {
                     $(".loginLink").removeClass("hide");
-                    localStorage.setItem("loginaction","pending");
+                    localStorage.setItem("loginaction", "pending");
                     $(".loginLink").html("Complete Signup");
                 }
             })
@@ -196,7 +243,7 @@
         var fileInputChangeSelector = fileInputSelector + ':file';
         var provider = app.data.defaultProvider;
 
-        that.callback = function(){};
+        that.callback = function () { };
         that.uri = '';
         that.file = null;
 
@@ -299,8 +346,8 @@
                 });
             } else {
                 var file = that.file || {
-                        type: 'image/jpeg'
-                    };
+                    type: 'image/jpeg'
+                };
 
                 var cleanBase64 = picture.split(',')[1];
                 uploadImagePromise = provider.files.applyOffline(false).create({
@@ -311,16 +358,16 @@
             }
 
             return uploadImagePromise.then(function (res) {
-                    var id;
-                    if (res.response) {
-                        var responseObject = JSON.parse(res.response);
-                        id = responseObject.Result[0].Id
-                    } else {
-                        id = res.result.Id;
-                    }
+                var id;
+                if (res.response) {
+                    var responseObject = JSON.parse(res.response);
+                    id = responseObject.Result[0].Id
+                } else {
+                    id = res.result.Id;
+                }
 
-                    return id;
-                })
+                return id;
+            })
                 .catch(app.notify.error);
         };
 

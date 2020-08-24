@@ -63,7 +63,7 @@
                 name: "LMS App",
                 transition: 'fade',
                 skin: 'nova',
-                initial: 'lms/login.html',
+                initial: 'lms/',
                 useNativeScrolling: true,
             });
 

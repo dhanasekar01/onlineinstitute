@@ -81,9 +81,7 @@ table {
 	margin:0;
 	padding: 0;
 }
-a {
-    color: #ed2a26 ;
-}
+
 a:focus {
 	text-decoration: none;
 	outline: none;
@@ -357,7 +355,7 @@ input[type=text] {
     text-align: left;
     line-height: 24px;
     padding: 0 3px;
-	color: #333;
+	color: #333 !important;
 }
 
 .left_footer a:hover {
@@ -1004,7 +1002,7 @@ i.icon1 {
 }
 
 .cr1fot a {
-    color: #333;
+    color: #333 !important;
     font-weight: 500;
 }
 
@@ -1430,7 +1428,7 @@ i.icon1 {
     border-radius: 100%;
     text-align: center;
     padding: 9px 0;
-    color: #fff;
+    color: #fff !important;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -1860,7 +1858,7 @@ i.icon1 {
     font-family: 'Roboto', sans-serif;
     display: block;
     padding-bottom: 10px;
-    color: #fff;
+    color: #fff !important;
 }
 
 .item_f1 a:hover {
@@ -1902,7 +1900,7 @@ i.icon1 {
     padding: 10px 15px;
     border: 1px solid #fff;
     border-radius: 20px;
-    color: #fff;
+    color: #fff !important;
     font-family: 'Roboto', sans-serif;
     background: transparent;
     font-size: 14px;
@@ -1955,7 +1953,7 @@ i.icon1 {
     padding-left: 15px;
     font-size: 16px;
     display: inline-block;
-    color: #f7f7f7;
+    color: #f7f7f7 !important;
 	-webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -2327,7 +2325,7 @@ i.icon1 {
 
 .sf475 a {
     font-weight: 500;
-    color: #333;
+    color: #333 !important;
 }
 
 .sf475 a:hover {
@@ -3811,7 +3809,7 @@ i.icon2 {
 
 .cate_option li a {
     font-size: 14px;
-    color: #686f7a;
+    color: #686f7a !important;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     font-weight: 400;
@@ -4642,7 +4640,7 @@ a.rmv-btn i {
 }
 
 .ttl121 .breadcrumb-item a {
-	color: #333;
+	color: #333 !important;
 }
 
 .ttl121 .breadcrumb-item {
@@ -5876,7 +5874,7 @@ a.rmv-btn i {
 }
 
 .sgntrm145 a {
-    color: #ed2a26;
+    color: #ed2a26 !important;
 }
 
 .sgntrm145 a:hover {
@@ -5885,7 +5883,7 @@ a.rmv-btn i {
 }
 
 .hvsng145 a {
-    color: #ed2a26;
+    color: #ed2a26 !important;
 }
 
 .hvsng145 a:hover {
@@ -6103,7 +6101,7 @@ a.rmv-btn i {
 .panel-title a {
 	font-size: 18px;
 	font-weight: 500;
-	color: #333;
+	color: #333 !important;
 	font-family: 'Roboto', sans-serif;
 	padding: 15px 0 18px;
     display: block;
@@ -6551,6 +6549,7 @@ a.rmv-btn i {
 	margin-left: 0;
     margin-top: 0;
     padding: 0 !important;
+    min-height: 800px;
 }
 
 .coming_soon_style {
@@ -6597,7 +6596,7 @@ a.rmv-btn i {
 .thnk_title1 {
 	font-size: 24px;
 	font-weight: 400;
-	color: #fff;
+	color: #fff !important;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	line-height: 26px;
@@ -6623,7 +6622,7 @@ a.rmv-btn i {
 }
 
 .thnk_des a {
-	color: #ed2a26;
+	color: #ed2a26 !important;
 }
 
 .thnk_des a:hover {
@@ -6656,7 +6655,7 @@ a.rmv-btn i {
     text-align: left;
     line-height: 24px;
     padding: 10px 10px 0;
-    color: #fff;
+    color: #fff !important;
 }
 
 .tc_footer_left a:hover {
@@ -7251,7 +7250,7 @@ a.rmv-btn i {
 .panel-title10 a {
 	font-size: 16px;
 	font-weight: 500;
-	color: #333;
+	color: #333 !important;
 	font-family: 'Roboto', sans-serif;
 	padding: 15px 0 18px;
     display: block;
@@ -7292,7 +7291,7 @@ a.rmv-btn i {
 }
 
 .testtrm145 a {
-    color: #ed2a26;
+    color: #ed2a26 !important;
 }
 
 .testtrm145 a:hover {
@@ -7301,7 +7300,7 @@ a.rmv-btn i {
 }
 
 .sgntrm145 a {
-    color: #ed2a26;
+    color: #ed2a26 !important;
 }
 
 .questrm145 {
@@ -7864,7 +7863,7 @@ a.rmv-btn i {
     font-weight: 500;
 	font-family: 'Roboto', sans-serif;
     border-radius: 10px;
-    color: #333;
+    color: #333 !important;
     padding: 15px;
     position: relative;
 	display: flex;

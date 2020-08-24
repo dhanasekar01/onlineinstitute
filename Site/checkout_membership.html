@@ -42,8 +42,8 @@
 					</div>
 					<div class="ml_item">
 						<div class="main_logo main_logo15" id="logo">
-							<a href="index.html"><img src="images/logo.png" alt=""></a>
-							<a href="index.html"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
+							<a onclick="app.navigation.home();"><img src="images/logo.png" alt=""></a>
+							<a onclick="app.navigation.home();"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
 						</div>				
 					</div>				
 					<div class="header_right pr-0">
@@ -66,7 +66,7 @@
 												<span>gambol943@gmail.com</span>
 											</div>							
 										</div>
-										<a href="my_instructor_profile_view.html" class="dp_link_12">View Instructor Profile</a>
+										<a onclick="app.navigation.instructor();" class="dp_link_12">View Instructor Profile</a>
 									</div>
 									<div class="night_mode_switch__btn">
 										<a href="#" id="night-mode" class="btn-night-mode">
@@ -76,7 +76,7 @@
 											</span>
 										</a>
 									</div>
-									<a href="instructor_dashboard.html" class="item channel_item">Cursus Dashboard</a>						
+									<a onclick="app.navigation.teacherDashboard();" class="item channel_item">Cursus Dashboard</a>						
 									<a href="sign_in.html" class="item channel_item">Sign Out</a>
 								</div>
 							</li>
@@ -98,7 +98,7 @@
 								<div class="ttl121">
 									<nav aria-label="breadcrumb">
 										<ol class="breadcrumb">
-											<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+											<li class="breadcrumb-item"><a onclick="app.navigation.home();">Home</a></li>
 											<li class="breadcrumb-item"><a href="membership.html">Paid Membership</a></li>
 											<li class="breadcrumb-item active" aria-current="page">Checkout</li>
 										</ol>
@@ -689,25 +689,25 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="about_us.html">About</a>
+							<a onclick="app.navigation.about();">About</a>
 							<a href="our_blog.html">Blog</a>
 							<a href="career.html">Careers</a>
-							<a href="press.html">Press</a>
+							<a onclick="app.navigation.about();">Press</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="help.html">Help</a>
-							<a href="coming_soon.html">Advertise</a>
-							<a href="coming_soon.html">Developers</a>
-							<a href="contact_us.html">Contact Us</a>
+							<a onclick="app.navigation.help()">Help</a>
+							<a onclick="app.navigation.comingsoon();">Advertise</a>
+							<a onclick="app.navigation.comingsoon();">Developers</a>
+							<a onclick="app.navigation.contact();">Contact Us</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="terms_of_use.html">Copyright Policy</a>
-							<a href="terms_of_use.html">Terms</a>
-							<a href="terms_of_use.html">Privacy Policy</a>
+							<a onclick="app.navigation.terms();">Copyright Policy</a>
+							<a onclick="app.navigation.terms();">Terms</a>
+							<a onclick="app.navigation.terms();">Privacy Policy</a>
 							<a href="#">Sitemap</a>
 						</div>
 					</div>
@@ -827,7 +827,7 @@
 								<div class="col-md-6">
 									<ul class="fotb_left">
 										<li>
-											<a href="index.html">
+											<a onclick="app.navigation.home();">
 												<div class="footer_logo">
 													<img src="images/logo1.svg" alt="">
 												</div>

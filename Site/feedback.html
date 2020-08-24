@@ -40,8 +40,8 @@
 			<span class="collapse_menu--label"></span>
 		</button>
 		<div class="main_logo" id="logo">
-			<a href="index.html"><img src="images/logo.png" alt=""></a>
-			<a href="index.html"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
+			<a onclick="app.navigation.home();"><img src="images/logo.png" alt=""></a>
+			<a onclick="app.navigation.home();"><img class="logo-inverse" src="images/ct_logo.png" alt=""></a>
 		</div>
 		<div class="search120">
 			<div class="ui search">
@@ -54,10 +54,10 @@
 		<div class="header_right">
 			<ul>
 				<li>
-					<a href="create_new_course.html" class="upload_btn">Create New Course</a>
+					<a onclick="app.navigation.createcourse();" class="upload_btn">Create New Course</a>
 				</li>
 				<li>
-					<a href="index.html" class="option_links"><i class='uil uil-home-alt'></i><span class="noti_count">9+</span></a>
+					<a onclick="app.navigation.home();" class="option_links"><i class='uil uil-home-alt'></i><span class="noti_count">9+</span></a>
 				</li>
 				<li class="ui dropdown">
 					<a href="#" class="option_links"><i class='uil uil-envelope-alt'></i><span class="noti_count">3</span></a>
@@ -102,7 +102,7 @@
 							<div class="profile_link">
 								<img src="images/left-imgs/img-1.jpg" alt="">
 								<div class="pd_content">
-									<h6>Rock William</h6>
+									<h6>Purushothaman</h6>
 									<p>Like Your Comment On Video <strong>How to create sidebar menu</strong>.</p>
 									<span class="nm_time">2 min ago</span>
 								</div>							
@@ -148,7 +148,7 @@
 									<span>gambol943@gmail.com</span>
 								</div>							
 							</div>
-							<a href="my_instructor_profile_view.html" class="dp_link_12">View Instructor Profile</a>						
+							<a onclick="app.navigation.instructor();" class="dp_link_12">View Instructor Profile</a>						
 						</div>
 						<div class="night_mode_switch__btn">
 							<a href="#" id="night-mode" class="btn-night-mode">
@@ -158,11 +158,11 @@
 								</span>
 							</a>
 						</div>
-						<a href="instructor_dashboard.html" class="item channel_item">Cursus dashboard</a>						
+						<a onclick="app.navigation.teacherDashboard();" class="item channel_item">Cursus dashboard</a>						
 						<a href="membership.html" class="item channel_item">Paid Memberships</a>
-						<a href="setting.html" class="item channel_item">Setting</a>
-						<a href="help.html" class="item channel_item">Help</a>
-						<a href="feedback.html" class="item channel_item">Send Feedback</a>
+						<a onclick="app.navigation.settings()" class="item channel_item">Setting</a>
+						<a onclick="app.navigation.help()" class="item channel_item">Help</a>
+						<a onclick="app.navigation.feedback();" class="item channel_item">Send Feedback</a>
 						<a href="sign_in.html" class="item channel_item">Sign Out</a>
 					</div>
 				</li>
@@ -176,25 +176,25 @@
 			<div class="left_section">
 				<ul>
 					<li class="menu--item">
-						<a href="index.html" class="menu--link active" title="Home">
+						<a onclick="app.navigation.home();" class="menu--link active" title="Home">
 							<i class='uil uil-home-alt menu--icon'></i>
 							<span class="menu--label">Home</span>
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="live_streams.html" class="menu--link" title="Live Streams">
+						<a onclick="app.navigation.livestream()" class="menu--link" title="Live Streams">
 							<i class='uil uil-kayak menu--icon'></i>
 							<span class="menu--label">Live Streams</span>
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="explore.html" class="menu--link" title="Explore">
+						<a onclick="app.navigation.explore()" class="menu--link" title="Explore">
 							<i class='uil uil-search menu--icon'></i>
 							<span class="menu--label">Explore</span>
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="categories.html" class="menu--link" title="Categories">
+						<a onclick="app.navigation.categories();" class="menu--link" title="Categories">
 							<i class='uil uil-layers menu--icon'></i>
 							<span class="menu--label">Categories</span>
 						</a>
@@ -223,7 +223,7 @@
 						</ul>
 					</li>
 					<li class="menu--item">
-						<a href="saved_courses.html" class="menu--link" title="Saved Courses">
+						<a onclick="app.navigation.savedcourse();" class="menu--link" title="Saved Courses">
 						  <i class="uil uil-heart-alt menu--icon"></i>
 						  <span class="menu--label">Saved Courses</span>
 						</a>
@@ -235,7 +235,7 @@
 						</label>
 						<ul class="sub_menu">
 							<li class="sub_menu--item">
-								<a href="about_us.html" class="sub_menu--link">About</a>
+								<a onclick="app.navigation.about();" class="sub_menu--link">About</a>
 							</li>
 							<li class="sub_menu--item">
 								<a href="sign_in.html" class="sub_menu--link">Sign In</a>
@@ -274,10 +274,10 @@
 								<a href="company_details.html" class="sub_menu--link">Company Details</a>
 							</li>
 							<li class="sub_menu--item">
-								<a href="press.html" class="sub_menu--link">Press</a>
+								<a onclick="app.navigation.about();" class="sub_menu--link">Press</a>
 							</li>
 							<li class="sub_menu--item">
-								<a href="live_output.html" class="sub_menu--link">Live Stream View</a>
+								<a onclick="app.navigation.liveoutput()" class="sub_menu--link">Live Stream View</a>
 							</li>
 							<li class="sub_menu--item">
 								<a href="add_streaming.html" class="sub_menu--link">Add live Stream</a>
@@ -289,7 +289,7 @@
 								<a href="thank_you.html" class="sub_menu--link">Thank You</a>
 							</li>
 							<li class="sub_menu--item">
-								<a href="coming_soon.html" class="sub_menu--link">Coming Soon</a>
+								<a onclick="app.navigation.comingsoon();" class="sub_menu--link">Coming Soon</a>
 							</li>
 							<li class="sub_menu--item">
 								<a href="error_404.html" class="sub_menu--link">Error 404</a>
@@ -304,7 +304,7 @@
 					<li class="menu--item">
 						<a href="instructor_profile_view.html" class="menu--link user_img">
 							<img src="images/left-imgs/img-1.jpg" alt="">
-							Rock Smith
+							Purushothaman
 							<div class="alrt_dot"></div>
 						</a>
 					</li>
@@ -316,7 +316,7 @@
 						<div class="alrt_dot"></div>
 					</li>
 					<li class="menu--item">
-						<a href="all_instructor.html" class="menu--link" title="Browse Instructors">
+						<a onclick="app.navigation.allinstructor();" class="menu--link" title="Browse Instructors">
 						  <i class='uil uil-plus-circle menu--icon'></i>
 						  <span class="menu--label">Browse Instructors</span>
 						</a>
@@ -326,13 +326,13 @@
 			<div class="left_section pt-2">
 				<ul>
 					<li class="menu--item">
-						<a href="setting.html" class="menu--link" title="Setting">
+						<a onclick="app.navigation.settings()" class="menu--link" title="Setting">
 							<i class='uil uil-cog menu--icon'></i>
 							<span class="menu--label">Setting</span>
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="help.html" class="menu--link" title="Help">
+						<a onclick="app.navigation.help()" class="menu--link" title="Help">
 							<i class='uil uil-question-circle menu--icon'></i>
 							<span class="menu--label">Help</span>
 						</a>
@@ -344,7 +344,7 @@
 						</a>
 					</li>
 					<li class="menu--item">
-						<a href="feedback.html" class="menu--link" title="Send Feedback">
+						<a onclick="app.navigation.feedback();" class="menu--link" title="Send Feedback">
 							<i class='uil uil-comment-alt-exclamation menu--icon'></i>
 							<span class="menu--label">Send Feedback</span>
 						</a>
@@ -353,14 +353,14 @@
 			</div>
 			<div class="left_footer">
 				<ul>
-					<li><a href="about_us.html">About</a></li>
-					<li><a href="press.html">Press</a></li>
-					<li><a href="contact_us.html">Contact Us</a></li>
-					<li><a href="coming_soon.html">Advertise</a></li>
-					<li><a href="coming_soon.html">Developers</a></li>
-					<li><a href="terms_of_use.html">Copyright</a></li>
-					<li><a href="terms_of_use.html">Privacy Policy</a></li>
-					<li><a href="terms_of_use.html">Terms</a></li>
+					<li><a onclick="app.navigation.about();">About</a></li>
+					<li><a onclick="app.navigation.about();">Press</a></li>
+					<li><a onclick="app.navigation.contact();">Contact Us</a></li>
+					<li><a onclick="app.navigation.comingsoon();">Advertise</a></li>
+					<li><a onclick="app.navigation.comingsoon();">Developers</a></li>
+					<li><a onclick="app.navigation.terms();">Copyright</a></li>
+					<li><a onclick="app.navigation.terms();">Privacy Policy</a></li>
+					<li><a onclick="app.navigation.terms();">Terms</a></li>
 				</ul>
 				<div class="left_footer_content">
 					<p>© 2020 <strong>Purushothaman Online Tutor</strong>. All Rights Reserved.</p>
@@ -413,25 +413,25 @@
 				<div class="row">
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="about_us.html">About</a>
+							<a onclick="app.navigation.about();">About</a>
 							<a href="our_blog.html">Blog</a>
 							<a href="career.html">Careers</a>
-							<a href="press.html">Press</a>
+							<a onclick="app.navigation.about();">Press</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="help.html">Help</a>
-							<a href="coming_soon.html">Advertise</a>
-							<a href="coming_soon.html">Developers</a>
-							<a href="contact_us.html">Contact Us</a>
+							<a onclick="app.navigation.help()">Help</a>
+							<a onclick="app.navigation.comingsoon();">Advertise</a>
+							<a onclick="app.navigation.comingsoon();">Developers</a>
+							<a onclick="app.navigation.contact();">Contact Us</a>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-6">
 						<div class="item_f1">
-							<a href="terms_of_use.html">Copyright Policy</a>
-							<a href="terms_of_use.html">Terms</a>
-							<a href="terms_of_use.html">Privacy Policy</a>
+							<a onclick="app.navigation.terms();">Copyright Policy</a>
+							<a onclick="app.navigation.terms();">Terms</a>
+							<a onclick="app.navigation.terms();">Privacy Policy</a>
 							<a href="#">Sitemap</a>
 						</div>
 					</div>
@@ -551,7 +551,7 @@
 								<div class="col-md-6">
 									<ul class="fotb_left">
 										<li>
-											<a href="index.html">
+											<a onclick="app.navigation.home();">
 												<div class="footer_logo">
 													<img src="images/logo1.svg" alt="">
 												</div>

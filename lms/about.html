@@ -1,5 +1,693 @@
-<div data-role="view" data-title="About Us" data-layout="main-nonav" data-model="app.about" data-init="app.about.init"
-    data-show="app.about.onShow" data-after-show="app.about.afterShow" id="aboutScreen" data-use-native-scrolling="true">
+<div data-role="view" data-title="About Us" data-layout="sub-page" data-model="app.about" data-init="app.about.init"
+	data-show="app.about.onShow" data-after-show="app.about.afterShow" id="aboutScreen"
+	data-use-native-scrolling="true">
+	<div class="wrapper _bg4586 _new89">
+		<div class="_215cd2">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="course_tabs">
+							<nav>
+								<div class="nav nav-tabs tab_crse aboutuscss  justify-content-center">
+									<a class="nav-item nav-link active"
+										data-bind="events:{click: aboutModel.about}">About</a>
+									<a class="nav-item nav-link" data-bind="events:{click: aboutModel.blog}">Blog</a>
+									<a class="nav-item nav-link"
+										data-bind="events:{click: aboutModel.company}">Company</a>
+									<a class="nav-item nav-link"
+										data-bind="events:{click: aboutModel.careers}">Careers</a>
+									<a class="nav-item nav-link" data-bind="events:{click: aboutModel.press}">Press</a>
+								</div>
+							</nav>
+						</div>
+						<div class="title129 mt-35 mb-35" data-bind="visible: aboutModel.isAbout">
+							<h2>Improving Lives Through Learning</h2>
+						</div>
+						<div class="title129 mt-35 mb-35" data-bind="visible: aboutModel.isBlog">
+							<h2>Insights, ideas, and stories</h2>
+						</div>
+						<div class="title129 mt-35 mb-35" data-bind="visible: aboutModel.isCareer">
+							<h2>Expanding learning opportunities</h2>
+						</div>
+						<div class="title129 mt-35 mb-35" data-bind="visible: aboutModel.isCompany">
+							<h2>We're a passionate, creative, and global company, come work with us.</h2>
+						</div>
+						<div class="title129 mt-35 mb-35" data-bind="visible: aboutModel.isPress">
+							<h2>What others are saying</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-Hi
+		<div class="_205ef5" data-bind="visible: aboutModel.isPress">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-5">
+						<div class="fcrse_3 mt-50">
+							<ul class="blogleft12">
+								<li>
+									<div class="socl148">
+										<button class="twiter158" data-href="#" onclick="sharingPopup(this);"
+											id="twitter-share"><i class="uil uil-twitter ic45"></i>Follow</button>
+										<button class="facebook158" data-href="#" onclick="sharingPopup(this);"
+											id="facebook-share"><i class="uil uil-facebook ic45"></i>Follow</button>
+									</div>
+								</li>
+								<li>
+									<div class="help_link">
+										<p>Learn More</p>
+										<a href="#">Cursus Help Center</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-7">
+						<div class="press_news">
+							<h2>Cursus in the News</h2>
+							<p>For media interviews and inquiries, please send an email to <a
+									href="#">press@cursus.com</a></p>
+							<div class="press_item mt-35">
+								<div class="vdtopress">March 10, 2020</div>
+								<h4>Press News Title</h4>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor, vitae fringilla quam...</p>
+								<a href="#" class="press_dt_view">Read More<i
+										class="uil uil-angle-double-right"></i></a>
+							</div>
+							<div class="press_item mt-30">
+								<div class="vdtopress">March 10, 2020</div>
+								<h4>Press News Title</h4>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor, vitae fringilla quam...</p>
+								<a href="#" class="press_dt_view">Read More<i
+										class="uil uil-angle-double-right"></i></a>
+							</div>
+							<div class="press_item mt-30">
+								<div class="vdtopress">March 10, 2020</div>
+								<h4>Press News Title</h4>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor, vitae fringilla quam...</p>
+								<a href="#" class="press_dt_view">Read More<i
+										class="uil uil-angle-double-right"></i></a>
+							</div>
+							<a href="#" class="allnews_btn">See More News</a>
+						</div>
+
+						<div class="press_news mb-50">
+							<h2>Press Releases</h2>
+							<p>For Release from Cursus </p>
+							<div class="press_item mt-35">
+								<div class="vdtopress">March 10, 2020</div>
+								<a href="#" class="press_title">Press Release Title</a>
+							</div>
+							<div class="press_item mt-20">
+								<div class="vdtopress">March 10, 2020</div>
+								<a href="#" class="press_title mb-0">Press Release Title</a>
+							</div>
+							<div class="press_item mt-20">
+								<div class="vdtopress">March 10, 2020</div>
+								<a href="#" class="press_title mb-0">Press Release Title</a>
+							</div>
+							<div class="press_item mt-20">
+								<div class="vdtopress">March 10, 2020</div>
+								<a href="#" class="press_title mb-0">Press Release Title</a>
+							</div>
+							<div class="press_item mt-20">
+								<div class="vdtopress">March 10, 2020</div>
+								<a href="#" class="press_title mb-0">Press Release Title</a>
+							</div>
+							<a href="#" class="allnews_btn">See More Press Releases</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-bind="visible: aboutModel.isCareer">
+			<div class="_215zd5">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="story125">
+								<iframe src="https://www.youtube.com/embed/TKnufs85hXk"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen=""></iframe>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="title484">
+								<h2>Working at Cursus</h2>
+								<img class="line-title" src="images/line.svg" alt="">
+								<p>Phasellus ex mauris, rhoncus quis posuere sit amet, ultricies nec lorem. Vivamus
+									vestibulum porta urna, in placerat lectus facilisis sit amet. Vestibulum non mauris
+									augue. Maecenas arcu magna, aliquam imperdiet tempor nec, lobortis ac erat. Aliquam
+									vel magna tortor. Cras ornare, enim eu tristique tristique, orci nisl blandit mi, at
+									dignissim velit leo nec metus.</p>
+								<a href="#cr458" class="joblink">Check Out Our Open Roles</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="_215td5">
+				<div class="container">
+					<div class="branches_all">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="section3125">
+									<div class="la5lo1">
+										<div class="owl-carousel feature_careers owl-theme">
+											<div class="item">
+												<div class="career_item">
+													<div class="career_item_img">
+														<img src="images/about/career-1.jpg" alt="">
+													</div>
+													<h4>We are learners</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+														eget enim in turpis consequat tempor sed id neque. Nam at felis
+														et elit auctor accumsan. Nunc at tortor tellus. Cras dignissim
+														velit velit, ac sollicitudin mi bibendum in. In vel nibh
+														sodales, venenatis eros a, vulputate ligula.</p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="career_item">
+													<div class="career_item_img">
+														<img src="images/about/career-2.jpg" alt="">
+													</div>
+													<h4>We are navigators</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+														eget enim in turpis consequat tempor sed id neque. Nam at felis
+														et elit auctor accumsan. Nunc at tortor tellus. Cras dignissim
+														velit velit, ac sollicitudin mi bibendum in. In vel nibh
+														sodales, venenatis eros a, vulputate ligula.</p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="career_item">
+													<div class="career_item_img">
+														<img src="images/about/career-3.jpg" alt="">
+													</div>
+													<h4>We are global</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+														eget enim in turpis consequat tempor sed id neque. Nam at felis
+														et elit auctor accumsan. Nunc at tortor tellus. Cras dignissim
+														velit velit, ac sollicitudin mi bibendum in. In vel nibh
+														sodales, venenatis eros a, vulputate ligula.</p>
+												</div>
+											</div>
+											<div class="item">
+												<div class="career_item">
+													<div class="career_item_img">
+														<img src="images/about/career-4.jpg" alt="">
+													</div>
+													<h4>We make an impact</h4>
+													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+														eget enim in turpis consequat tempor sed id neque. Nam at felis
+														et elit auctor accumsan. Nunc at tortor tellus. Cras dignissim
+														velit velit, ac sollicitudin mi bibendum in. In vel nibh
+														sodales, venenatis eros a, vulputate ligula.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="_215zd5">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="title589 text-center">
+								<h2>Benefits</h2>
+								<p>Cursus culture is something special, and to complement and support that culture we
+									have some amazing benefits.</p>
+								<img class="line-title" src="images/line.svg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-location-pin-alt"></i>
+								<h4>Work from anywhere</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-plane-departure"></i>
+								<h4>Work and Travel</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-adjust-half"></i>
+								<h4>Flexible Hours</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-kid"></i>
+								<h4>Purchasing Leave</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-rss-interface"></i>
+								<h4>Social Events</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-flower"></i>
+								<h4>Wellness Program</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-feedback"></i>
+								<h4>Mentoring Program</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+						<div class="col-lg-3  col-sm-6">
+							<div class="feature125">
+								<i class="uil uil-anchor"></i>
+								<h4>Fundraising</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget enim in turpis
+									consequat tempor sed id neque. Nam at felis et elit auctor accumsan.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="_215td5" id="cr458">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="title589 mb-20 text-center">
+								<h2>Open Roles</h2>
+								<p>Cursus is a fast growing company and we're expanding both our Punjab office and
+									international offices.</p>
+								<img class="line-title" src="images/line.svg" alt="">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>Algorithm Engineer</h4>
+								<span>India</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>Chief Technology Officer</h4>
+								<span>India</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>Customer Growth & Marketing Analyst</h4>
+								<span>India</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>Data Engineer</h4>
+								<span>India</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>iOS Developer - Edututs+ San Francisco, CA</h4>
+								<span>San Francisco, CA</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="apply_job_link mt-30">
+								<h4>Senior UX Designer</h4>
+								<span>India</span>
+								<div class="apply_job_link_right">
+									<a href="apply_job.html" class="career_lnk5">Learn More and Apply</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="_205ef5" data-bind="visible: aboutModel.isBlog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-5">
+						<div class="fcrse_3 mt-50">
+							<ul class="blogleft12">
+								<li>
+									<div class="explore_search blg152">
+										<div class="ui search focus">
+											<div class="ui left icon input swdh11 swdh15">
+												<input class="prompt srch_explore" type="text" placeholder="Search">
+												<i class="uil uil-search-alt icon icon2"></i>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<a href="#collapse1" class="category-topics cate-right collapsed"
+										data-toggle="collapse" role="button" aria-expanded="true"
+										aria-controls="collapse1">Labels</a>
+									<div class="collapse" id="collapse1" style="">
+										<ul class="category-card">
+											<li>
+												<a href="#" class="category-item1 active">All</a>
+												<a href="#" class="category-item1">Students</a>
+												<a href="#" class="category-item1">Instructors</a>
+												<a href="#" class="category-item1">Ideas & Opinions</a>
+												<a href="#" class="category-item1">Edututs+ News</a>
+												<a href="#" class="category-item1">Social Innovation</a>
+											</li>
+										</ul>
+									</div>
+									<a href="#collapse2" class="category-topics cate-right collapsed"
+										data-toggle="collapse" role="button" aria-expanded="false"
+										aria-controls="collapse2">Archive</a>
+									<div class="collapse" id="collapse2" style="">
+										<ul class="category-card">
+											<li>
+												<a href="#" class="category-item1">January 2020</a>
+												<a href="#" class="category-item1">February 2020</a>
+												<a href="#" class="category-item1">March 2020</a>
+												<a href="#" class="category-item1">April 2020</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="socl148">
+										<button class="twiter158" data-href="#" onclick="sharingPopup(this);"
+											id="twitter-share"><i class="uil uil-twitter ic45"></i>Follow</button>
+										<button class="facebook158" data-href="#" onclick="sharingPopup(this);"
+											id="facebook-share"><i class="uil uil-facebook ic45"></i>Follow</button>
+									</div>
+								</li>
+								<li>
+									<div class="help_link">
+										<p>Learn More</p>
+										<a href="#">Cursus Help Center</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-9 col-md-7">
+						<div class="blogbg_1 mt-50">
+							<a href="blog_single_view.html" class="hf_img">
+								<img src="images/blog/img-1.jpg" alt="">
+								<div class="course-overlay"></div>
+							</a>
+							<div class="hs_content">
+								<div class="vdtodt">
+									<span class="vdt14">109k views</span>
+									<span class="vdt14">March 10, 2020</span>
+								</div>
+								<a href="blog_single_view.html" class="crse14s title900">Blog Title Here</a>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor, vitae fringilla quam interdum mollis arcu.</p>
+								<a href="blog_single_view.html" class="view-blog-link">Read More<i
+										class="uil uil-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="blogbg_1 mt-30">
+							<a href="blog_single_view.html" class="hf_img">
+								<img src="images/blog/img-2.jpg" alt="">
+								<div class="course-overlay"></div>
+							</a>
+							<div class="hs_content">
+								<div class="vdtodt">
+									<span class="vdt14">109k views</span>
+									<span class="vdt14">March 10, 2020</span>
+								</div>
+								<a href="blog_single_view.html" class="crse14s title900">Blog Title Here</a>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor interdum mollis arcu interdum mollis arcu.</p>
+								<a href="blog_single_view.html" class="view-blog-link">Read More<i
+										class="uil uil-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="blogbg_1 mt-30">
+							<a href="blog_single_view.html" class="hf_img">
+								<img src="images/blog/img-3.jpg" alt="">
+								<div class="course-overlay"></div>
+							</a>
+							<div class="hs_content">
+								<div class="vdtodt">
+									<span class="vdt14">109k views</span>
+									<span class="vdt14">March 10, 2020</span>
+								</div>
+								<a href="blog_single_view.html" class="crse14s title900">Blog Title Here</a>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor interdum mollis arcu.</p>
+								<a href="blog_single_view.html" class="view-blog-link">Read More<i
+										class="uil uil-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="blogbg_1 mt-30">
+							<a href="blog_single_view.html" class="hf_img">
+								<img src="images/blog/img-4.jpg" alt="">
+								<div class="course-overlay"></div>
+							</a>
+							<div class="hs_content">
+								<div class="vdtodt">
+									<span class="vdt14">109k views</span>
+									<span class="vdt14">March 10, 2020</span>
+								</div>
+								<a href="blog_single_view.html" class="crse14s title900">Blog Title Here</a>
+								<p class="blog_des">Donec eget arcu vel mauris lacinia vestibulum id eu elit. Nam metus
+									odio, iaculis eu nunc et, interdum mollis arcu. Pellentesque viverra faucibus diam.
+									In sit amet laoreet dolor interdum mollis arcu.</p>
+								<a href="blog_single_view.html" class="view-blog-link">Read More<i
+										class="uil uil-arrow-right"></i></a>
+							</div>
+						</div>
+						<div class="main-p-pagination">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item disabled">
+										<a class="page-link" href="#" aria-label="Previous">
+											PREV
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link active" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">...</a></li>
+									<li class="page-item"><a class="page-link" href="#">24</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											NEXT
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--About-->
+		<div class="_215td5" data-bind="visible: aboutModel.isAbout">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title589 text-center">
+							<h2>Our Features</h2>
+							<p>On Cursus, you have access to:</p>
+							<img class="line-title" src="images/line.svg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-3  col-sm-6">
+						<div class="feature125">
+							<i class="uil uil-mobile-android-alt"></i>
+							<h4>Mobile learning</h4>
+							<p>Quisque nec volutpat sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3  col-sm-6">
+						<div class="feature125">
+							<i class="uil uil-users-alt"></i>
+							<h4>Academic & Technical Support</h4>
+							<p>Quisque nec volutpat sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3  col-sm-6">
+						<div class="feature125">
+							<i class="uil uil-award"></i>
+							<h4>Sharable Certificates</h4>
+							<p>Quisque nec volutpat sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-3  col-sm-6">
+						<div class="feature125">
+							<i class="uil uil-globe"></i>
+							<h4>An Inclusive Experience</h4>
+							<p>Quisque nec volutpat sem. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="_215zd5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="title478">
+							<h2>Our Story</h2>
+							<img class="line-title" src="images/line.svg" alt="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur vel dolor id
+								ultrices. Proin a magna at mi pretium pulvinar in eu enim. Nulla vel lacus lectus. Donec
+								at venenatis augue. Nam vitae purus placerat, hendrerit nisl id, finibus magna. Etiam
+								pharetra gravida ornare. Donec sagittis, ipsum in egestas egestas, dui lorem
+								sollicitudin justo, ut ullamcorper velit neque eu velit. Ut et fringilla elit. Mauris
+								augue augue, auctor a blandit ac, convallis eget neque. Curabitur in ante ante. Nullam
+								laoreet tempus erat at ornare. In nisl nisi, dapibus eget facilisis sit amet, commodo
+								quis nibh.</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="story125">
+							<img src="images/about/stroy_img.png" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="_215td5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title589 text-center">
+							<h2>Our Global Reach</h2>
+							<p>Cursus is the leading global marketplace for teaching and learning, connecting millions
+								of students to the skills they need to succeed.</p>
+							<img class="line-title" src="images/line.svg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							25k
+							<span>Instructors</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							95k
+							<span>Courses</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							40M
+							<span>Course enrollments</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							50+
+							<span>Languages</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							595+
+							<span>Membership Partners</span>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-4 col-sm-6">
+						<div class="p__metric">
+							295
+							<span>Countries</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="_215xd5">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title589 text-center">
+							<h2>Meet Our Team</h2>
+							<p>A perfect blend of creativity and technical wizardry. The best people formula for great
+								websites!</p>
+							<img class="line-title" src="images/line.svg" alt="">
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="jmio125">
+							<p>Morbi eget elit eget turpis varius mollis eget vel massa. Donec porttitor, sapien eget
+								commodo vulputate, erat felis aliquam dolor, non condimentum libero dolor vel ipsum. Sed
+								porttitor nisi eget nulla ullamcorper eleifend. Fusce tristique sapien nisi, vel feugiat
+								neque luctus sit amet. Quisque consequat quis turpis in mattis. Maecenas eget mollis
+								nisl. Cras porta dapibus est, quis malesuada ex iaculis at. Vestibulum egestas tortor in
+								urna tempor, in fermentum lectus bibendum. In leo leo, bibendum at pharetra at,
+								tincidunt in nulla. In vel malesuada nulla, sed tincidunt neque. Phasellus at massa vel
+								sem aliquet sodales non in magna. Ut tempus ipsum sagittis neque cursus euismod. Vivamus
+								luctus elementum tortor, ac aliquet dolor vehicula et.</p>
+							<a href="#" class="crer_btn_link">Join Our Team</a>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="jmio125">
+							<img src="images/about/team.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
