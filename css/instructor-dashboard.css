@@ -2723,7 +2723,7 @@ table {
     padding: 9px;
 }
 
-.ui[class*="left icon"].swdh95.input>input {
+#teachDashScreen .ui[class*="left icon"].swdh95.input>input {
     padding-left: 2em!important;
     padding-right: 3.5em!important;
     height: 40px !important;

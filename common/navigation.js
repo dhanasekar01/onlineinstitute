@@ -35,7 +35,7 @@
             app.navigation.openCategory("comingsoon");
         },
         student: function(){
-            app.navigation.openCategory("student");
+            app.navigation.openCategory("student/student");
         },
         contact: function(){
             app.navigation.openCategory("contact");
@@ -77,6 +77,15 @@
         },
         instructor:()=>{
             app.navigation.openCategory("instructor");
+        },
+        membership:()=>{
+            app.navigation.openCategory("membership");
+        },
+        mycourses:()=>{
+            app.navigation.openCategory("student/mycourses");
+        },
+        studentMessage:(who)=>{
+            app.navigation.openCategory("student/messages");
         }
     }
 

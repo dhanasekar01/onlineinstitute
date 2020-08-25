@@ -1,4 +1,4 @@
-<div data-role="view" data-title="Login" data-layout="main-nonav" data-model="app.login" data-init="app.login.init"
+<div data-role="view" data-title="Login" data-layout="nologin" data-model="app.login" data-init="app.login.init"
     data-show="app.login.onShow" data-after-show="app.login.afterShow" id="loginsScreen"
     data-use-native-scrolling="true">
 
@@ -35,8 +35,8 @@
                             <div class="ui form mt-30 checkbox_sign">
                                 <div class="inline field">
                                     <div class="ui checkbox mncheck">
-                                        <input type="checkbox" tabindex="0" class="hidden">
-                                        <label>Remember Me</label>
+                                        <input id="loginremember" type="checkbox" tabindex="0" class="hidden">
+                                        <label for="loginremember">Remember Me</label>
                                     </div>
                                 </div>
                             </div>
